@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <button id="add-book">Add Book</button>
+    <div class="books-container">
+    </div>
+    <dialog>
+        <form method="dialog">
+            <fieldset>
+                <div>
+                    <label class="label" for="cover-src">Cover Link:</label>
+                    <input name="cover-src" id="cover-src" type="url">
+                </div>
+                <div>
+                    <label class="label" for="title">Title:</label>
+                    <input name="title" id="title" type="text">
+                </div>
+                <div>
+                    <label class="label" class="label" for="author">Author:</label>
+                    <input name="author" id="author" type="text">
+                </div>
+                <div>
+                    <label class="label" for="pages">No. of Pages:</label>
+                    <input id="pages" name="pages" type="number">
+                </div>
+                <div>
+                    <h4>Status:</h4>
+                    <label for="status">Reading:</label>
+                    <input type="radio" name="status" value="incompleted">
+                    <label for="status">Completed:</label>
+                    <input type="radio" name="status" value="complete">
+                </div>
+            </fieldset>
+            <div class="submit-container">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+                <button id="cancel-btn" type="button">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+</body>
+
+</html>
